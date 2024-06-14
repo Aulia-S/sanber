@@ -1,0 +1,5 @@
+1) callback hell terjadi saat bekerja dengan banyak operasi asynchronous yang bergantung satu sama lain, callback dapat bersarang terlalu dalam, menghasilkan kode yang sulit dibaca dan dikelola. cara menghindari callback hell adalah dengan Promise. Promise memungkinkan kita untuk merangkai operasi asynchronous secara lebih bersih dibandingkan dengan callback.
+
+2) then digunakan untuk menjalankan kode yang diperlukan jika operasi di dalam promise berhasil. sedangkan catch digunakan untuk menjalankan kode jika operasi di dalam promise gagal. perbedaan lainnya, then meneruskan hasil dari promise yang berupa nilai, sedangkan catch meneruskan kesalahan error dari promise.
+
+3) Kesalahan dari fungsi yang menggunakan async/await dapat ditangani menggunakan blok try/catch.
