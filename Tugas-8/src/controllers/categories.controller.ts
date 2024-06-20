@@ -4,7 +4,7 @@ import CategoriesModel from '@/models/categories.model'
 export default {
   async create(req: Request, res: Response) {
     try {
-      const result = await CategoriesModel.create(req.body)
+      const result = await CategoriesModel.create({ ...req.body, products: [] })
       res.status(201).json({
         data: result,
         message: 'Success create category',
